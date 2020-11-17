@@ -15,12 +15,9 @@ class YouTubeDebugger extends Component {
           }
     }
 
-
-
     setBitRate = () => {
         this.setState ( 
             {
-                ...this.state,
                 settings: {
                     ...this.state.settings,
                     bitrate: 12
@@ -31,9 +28,8 @@ class YouTubeDebugger extends Component {
     
     
     setRes = () => {
-        this.setState ( () => {
-            return {
-                ...this.state,
+        this.setState (
+            {
                 settings: {
                     ...this.state.settings,
                     video: {
@@ -42,7 +38,7 @@ class YouTubeDebugger extends Component {
                     }
                 }
             }
-        })
+        )
     }
 
     render() { 
